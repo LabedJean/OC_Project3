@@ -1,0 +1,99 @@
+
+h1{
+    font-size: 60px;
+}
+
+#title{
+    color: #f5c84b;
+    background-color: #569c88;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 ! important;
+}
+#searchSection{
+    background-color: grey;
+    height: 5vh;
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+#iconSearch{
+    color: lightgray;
+    font-size: 25px;
+    margin-left: 1vw
+}
+
+#menuContainer{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+#firstMenu{
+    background-color: red;
+    height: 50vh;
+    width: 30vw;
+    margin: auto;
+    margin-bottom: 5%;
+}
+#secondMenu{
+    background-color: blue;
+    height: 50vh;
+    width: 30vw;
+    margin: auto;
+    margin-bottom: 5%;
+}
+#thirdtMenu{
+    background-color: green;
+    height: 50vh;
+    width: 30vw;
+    margin: auto;
+}
+#fourthMenu{
+    background-color: pink;
+    height: 50vh;
+    width: 30vw;
+    margin: auto;
+}
+#nameMenu{
+    margin-top: 50%;
+    font-size: 20px ;
+    text-align: center;
+}
+#titleMenu{
+    margin-top: 10%;
+    font-size: 20px ;
+    text-align: center;
+}
+#upcomming{
+   display: flex;
+   justify-content: center; 
+}
+#upcommingTitle{
+    background-color: #569c88;
+    padding: 20px;
+    width: 30vw;
+    text-align: center;
+    font-size: 25px;
+    color: #f5c84b;
+    border-radius: 10px;
+}
+#footerContainer{
+    display: flex;
+    background-color: #569c88;
+    height: 10vh;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#legalMentions{
+    font-size: 20px ;
+    margin-left: 3vw;
+    color: #f5c84b;
+
+}
+#contactUs{
+    font-size: 20px ;
+    margin-right: 3vw;
+    color: #f5c84b;
+}
