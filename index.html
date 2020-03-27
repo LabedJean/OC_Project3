@@ -8,34 +8,64 @@
 </head>
 <body>
     <!--HEADER-->
-    <header>
+    <header id="navContainer">
         <h1 id="title">ohmyfood</h1>
+        <a id="goBackInIndex" href="index.html">Retour aux menus</a>
     </header>
     <!--SEARCH-->
     <section id="searchSection"><i id="iconSearch" class="fas fa-search"></i></section>
     <!--MENUS-->
-    <section id="menuContainer">
-        <div id="firstMenu">
-            <h6 id="nameMenu">La note enchantée</h6>
-            <h5 id="titleMenu">MENU</h5>
+
+<ul class="cards">
+    <li class="cards__item" >
+      <div class="card">
+        <div class="card__content" id="firstMenu">
+            <a id='redirectMenu' href="laNoteEnchanteeMenu.html", title="Regarder ce menu">
+                <img id="imageNoteMain" src="menu-1-note.svg" alt="image note enchantée"/>
+                <h6 id="nameMenu">La note enchantée</h6>
+                <h5 id="titleMenu">MENU</h5>
+            </a>
         </div>
-        <div id="secondMenu">
-            <h6 id="nameMenu">Le chic à la francaise</h6>
-            <h5 id="titleMenu">MENU</h5>
-        </div>
-        <div id="thirdtMenu">
-            <h6 id="nameMenu">Le delice des papilles</h6>
-            <h5 id="titleMenu">MENU</h5>
-        </div>
-        <div id="fourthMenu">
-            <h6 id="nameMenu">La palettee du goût </h6>
-            <h5 id="titleMenu">MENU</h5>
-        </div>
-    </section>
-    <div id="upcomming"> <h5 id="upcommingTitle">Prochainement</h5></div>
+      </div>
+    </li>
+    <li class="cards__item">
+      <div class="card">
+        <div class="card__content"  id="secondMenu">
+            <a id='redirectMenu' href="leChicaLaFrancaiseMenu.html", title="Regarder ce menu">
+                <h6 id="nameMenu">Le chic à la francaise</h6>
+                <h5 id="titleMenu">MENU</h5>
+            </a> 
+      </div>
+    </li>
+    <li class="cards__item" >
+      <div class="card">
+        <div class="card__content" id="thirdtMenu">
+            <a id='redirectMenu' href="leChicaLaFrancaiseMenu.html", title="Regarder ce menu">
+                <h6 id="nameMenu">Le chic à la francaise</h6>
+                <h5 id="titleMenu">MENU</h5>
+            </a> 
+      </div>
+    </li>
+    <li class="cards__item">
+      <div class="card">
+        <div class="card__content"  id="fourthMenu">
+            <a id='redirectMenu' href="leChicaLaFrancaiseMenu.html", title="Regarder ce menu">
+                <h6 id="nameMenu">Le chic à la francaise</h6>
+                <h5 id="titleMenu">MENU</h5>
+            </a> 
+      </div>
+    </li>
+  </ul> 
+    <div id="upcomming"> 
+        <h5 id="upcommingTitle">Prochainement</h5>
+    </div>
     <footer id="footerContainer">
-        <h5 id="legalMentions">Mentions légales</h5>
-        <h5 id="contactUs">Contactez- nous</h5>
+        <div class="wiggle">  
+            <a id="contactUs" href="#">Mentions légales</a>
+        </div>
+        <div class="wiggle">  
+        <a href="mailto:contact@ohmyfood.fr" href="Cliquez ici pour nous contacter" id="contactUs">Contactez- nous</a>
+        </div>
     </footer>
     <script src="https://kit.fontawesome.com/bd1b34eca5.js" crossorigin="anonymous"></script>
 </body>
