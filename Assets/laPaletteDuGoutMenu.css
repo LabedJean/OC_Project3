@@ -1,10 +1,16 @@
+@font-face {
+    font-family: Playfair;
+    src: url('./Fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf');
+  }
 td{
-    font-size: 22px ;
+    font-size: 15px ;
     padding-bottom: 10px;
 }
 table{
     padding-left: 5%;
     margin-top: 5%; 
+    font-family: Playfair;
+
 }
 #mainSectionMenu{
     display: flex;
@@ -26,29 +32,16 @@ table{
 #headerInMenu{
     text-align: center;
     font-size: 50px;
-    background: linear-gradient(to right, #c77529, #6a56a5);
+    background: linear-gradient(to right, #57a746, #c2db76);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: Playfair;
 }
 #captionTitle{
-    font-size: 30px;
+    font-size: 28px;
     font-weight: normal;
     margin: 20px;
 }
-.firstTable{
-    color: #c77529;
-
-}
-.secondTable{
-    color: #a86698;
-
-
-}
-.thirdTable{
-    color: #6a56a5;
-
-}
-
 
 @media (max-width: 800px) {
     #mainSectionMenu{

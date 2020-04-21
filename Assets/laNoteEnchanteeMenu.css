@@ -1,10 +1,16 @@
+@font-face {
+    font-family: Dancing;
+    src: url('./Fonts/DancingScript-VariableFont_wght.ttf');
+  }
 td{
-    font-size: 22px ;
+    font-size: 15px ;
     padding-bottom: 10px;
 }
 table{
     padding-left: 5%;
     margin-top: 5%; 
+    font-family: Dancing;
+
 }
 #mainSectionMenu{
     display: flex;
@@ -26,27 +32,29 @@ table{
 #headerInMenu{
     text-align: center;
     font-size: 50px;
-    background: linear-gradient(to right, #c77529, #6a56a5);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-family: Dancing;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
 }
 #captionTitle{
-    font-size: 30px;
+    font-size: 28px;
     font-weight: normal;
     margin: 20px;
 }
-.firstTable{
-    color: #c77529;
-
+#imageNoteFooter{
+    width: 48px;
+    height: 50px;
+    margin-top: -9px;
+    margin-right: 10px;
 }
-.secondTable{
-    color: #a86698;
-
-
-}
-.thirdTable{
-    color: #6a56a5;
-
+#menuFooterNote{
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    text-align: center;
+    font-size: 25px;
+    font-family: Dancing;
 }
 
 

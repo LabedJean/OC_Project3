@@ -1,5 +1,5 @@
 td{
-    font-size: 22px ;
+    font-size: 15px ;
     padding-bottom: 10px;
 }
 table{
@@ -31,7 +31,7 @@ table{
     -webkit-text-fill-color: transparent;
 }
 #captionTitle{
-    font-size: 30px;
+    font-size: 28px;
     font-weight: normal;
     margin: 20px;
 }
