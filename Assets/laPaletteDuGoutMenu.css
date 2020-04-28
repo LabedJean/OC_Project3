@@ -2,6 +2,9 @@
     font-family: Playfair;
     src: url('./Fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf');
   }
+  caption{
+      margin-bottom: 10px;
+  }
 td{
     font-size: 15px ;
     padding-bottom: 10px;
@@ -37,10 +40,11 @@ table{
     -webkit-text-fill-color: transparent;
     font-family: Playfair;
 }
-#captionTitle{
+.captionTitle{
     font-size: 28px;
     font-weight: normal;
     margin: 20px;
+
 }
 
 @media (max-width: 800px) {
@@ -62,3 +66,29 @@ table{
         padding-right: 4%;
     }
     }
+
+
+    .captionTitle, .captionTitle:visited {
+        text-decoration: none;
+        position: relative;
+        }
+      .captionTitle:after, .captionTitle:visited:after {
+        content: '';
+        height: 3px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        background: linear-gradient(to right, #57a746, #c2db76);
+        transition: 0.2s;
+      }
+      .captionTitle:hover:after, .captionTitle:visited:hover:after {
+        width: 100%;  
+      }
+      .captionTitle.block, .captionTitle:visited.block {
+        display: block;
+        padding: 0.5em;
+      }
+      .captionTitle.block:hover, .captionTitle:visited.block:hover {
+        background: #eee;
+      }

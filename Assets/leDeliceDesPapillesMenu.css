@@ -6,6 +6,9 @@ td{
     font-size: 15px ;
     padding-bottom: 10px;
 }
+caption{
+    margin-bottom: 10px;
+}
 table{
     padding-left: 5%;
     margin-top: 5%; 
@@ -39,7 +42,7 @@ table{
     font-family: Kaushan;
 
 }
-#captionTitle{
+.captionTitle{
     font-size: 28px;
     font-weight: normal;
     margin: 20px;
@@ -66,3 +69,28 @@ table{
         padding-right: 4%;
     }
     }
+
+    .captionTitle, .captionTitle:visited {
+        text-decoration: none;
+        position: relative;
+        }
+      .captionTitle:after, .captionTitle:visited:after {
+        content: '';
+        height: 3px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        background: linear-gradient(to right,#3a4fa2, #4e96d1);
+        transition: 0.2s;
+      }
+      .captionTitle:hover:after, .captionTitle:visited:hover:after {
+        width: 100%;
+      }
+      .captionTitle.block, .captionTitle:visited.block {
+        display: block;
+        padding: 0.5em;
+      }
+      .captionTitle.block:hover, .captionTitle:visited.block:hover {
+        background: #eee;
+      }
