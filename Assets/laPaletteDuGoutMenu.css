@@ -40,11 +40,26 @@ table{
     -webkit-text-fill-color: transparent;
     font-family: Playfair;
 }
-.captionTitle{
+.captionTitleFirst{
     font-size: 28px;
     font-weight: normal;
-    margin: 20px;
-
+    margin-right: 5vw;
+    margin-left: 5vw;
+}
+.captionTitleSecond{
+  font-size: 28px;
+  font-weight: normal;
+  margin-right: 2vw;
+  margin-left: 2vw;
+}
+.captionTitleThird{
+  font-size: 28px;
+  font-weight: normal;
+  margin-right: 1.5vw;
+  margin-left: 1.5vw;
+}
+.brImage{
+  width: 15vw;
 }
 
 @media (max-width: 800px) {
@@ -66,29 +81,60 @@ table{
         padding-right: 4%;
     }
     }
+    .captionTitleFirst, .captionTitleFirst:visited , .captionTitleSecond, .captionTitleSecond:visited, .captionTitleThird, .captionTitleThird:visited {
+      text-decoration: none;
+      position: relative;
+      }
+    .captionTitleFirst:after, .captionTitleFirst:visited:after, .captionTitleSecond:after, .captionTitleSecond:visited:after,.captionTitleThird:after, .captionTitleThird:visited:after {
+      content: '';
+      height: 3px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      background:  linear-gradient(to right, #57a746, #c2db76);
+      transition: 0.2s;
+    }
+    .captionTitleFirst:hover:after, .captionTitleFirst:visited:hover:after,   .captionTitleSecond:hover:after, .captionTitleSecond:visited:hover:after   , .captionTitleThird:hover:after, .captionTitleThird:visited:hover:after {
+      width: 100%;
+    }
+    .captionTitleFirst.block, .captionTitleFirst:visited.block, .captionTitleSecond.block, .captionTitleSecond:visited.block , .captionTitleThird.block, .captionTitleThird:visited.block {
+      display: block;
+      padding: 0.5em;
+    }
 
-
-    .captionTitle, .captionTitle:visited {
-        text-decoration: none;
-        position: relative;
-        }
-      .captionTitle:after, .captionTitle:visited:after {
-        content: '';
-        height: 3px;
+    /* CSS mobile ici */
+    @media (max-width: 640px) {
+      #headerInMenu{
+        font-size: 30px;
+      }
+      .captionTitleFirst, .captionTitleSecond, .captionTitleThird{
+        font-size: 18px;
+        margin-right: 0vw;
+        margin-left: 0vw;
+      }
+      #footerContainer{
+        display: flex;
+        background-color: #569c88;
+        height: 6vh;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-right: 2%;
+        padding-left: 2%;
         position: absolute;
-        bottom: 0;
         left: 0;
-        width: 0%;
-        background: linear-gradient(to right, #57a746, #c2db76);
-        transition: 0.2s;
+        bottom: 0;
+        width: 96%;
+        left: 0;
+        top: 860px;
+    }
+    }
+
+    @media(max-width: 780px) {
+      td {
+        text-align: center;
       }
-      .captionTitle:hover:after, .captionTitle:visited:hover:after {
-        width: 100%;  
+      .captionContainer {
+        margin-top: 3vh;
       }
-      .captionTitle.block, .captionTitle:visited.block {
-        display: block;
-        padding: 0.5em;
-      }
-      .captionTitle.block:hover, .captionTitle:visited.block:hover {
-        background: #eee;
-      }
+    }

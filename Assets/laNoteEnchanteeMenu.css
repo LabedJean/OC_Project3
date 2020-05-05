@@ -37,10 +37,29 @@ table{
     justify-content: center;
     flex-direction: column;
 }
-.captionTitle{
+.captionContainer{
+  margin-bottom: 15px;
+}
+.captionTitleFirst{
     font-size: 28px;
     font-weight: normal;
-    margin: 20px;
+    margin-right: 6vw;
+    margin-left: 6vw;
+}
+.captionTitleSecond{
+  font-size: 28px;
+  font-weight: normal;
+  margin-right: 4vw;
+  margin-left: 4vw;
+}
+.captionTitleThird{
+  font-size: 28px;
+  font-weight: normal;
+  margin-right: 3vw;
+  margin-left: 3vw;
+}
+.brImage{
+  width: 15vw;
 }
 
 
@@ -81,11 +100,11 @@ table{
     }
 
 
-    .captionTitle, .captionTitle:visited {
+    .captionTitleFirst, .captionTitleFirst:visited , .captionTitleSecond, .captionTitleSecond:visited, .captionTitleThird, .captionTitleThird:visited {
         text-decoration: none;
         position: relative;
         }
-      .captionTitle:after, .captionTitle:visited:after {
+      .captionTitleFirst:after, .captionTitleFirst:visited:after, .captionTitleSecond:after, .captionTitleSecond:visited:after,.captionTitleThird:after, .captionTitleThird:visited:after {
         content: '';
         height: 3px;
         position: absolute;
@@ -95,13 +114,40 @@ table{
         background: black;
         transition: 0.2s;
       }
-      .captionTitle:hover:after, .captionTitle:visited:hover:after {
+      .captionTitleFirst:hover:after, .captionTitleFirst:visited:hover:after,   .captionTitleSecond:hover:after, .captionTitleSecond:visited:hover:after   , .captionTitleThird:hover:after, .captionTitleThird:visited:hover:after {
         width: 100%;
       }
-      .captionTitle.block, .captionTitle:visited.block {
+      .captionTitleFirst.block, .captionTitleFirst:visited.block, .captionTitleSecond.block, .captionTitleSecond:visited.block , .captionTitleThird.block, .captionTitleThird:visited.block {
         display: block;
         padding: 0.5em;
       }
-      .captionTitle.block:hover, .captionTitle:visited.block:hover {
-        background: #eee;
-      }
+      
+
+      /* CSS mobile ici */
+
+  @media(max-width: 780px) {
+    td {
+      text-align: center;
+    }
+    #footerContainer{
+      
+      position: absolute;
+      top: 1024px;
+    }
+  }
+  @media (max-width: 640px) {
+    #headerInMenu{
+      font-size: 30px;
+    }
+    .captionTitleFirst, .captionTitleSecond, .captionTitleThird{
+      font-size: 18px;
+      margin-right: 0vw;
+      margin-left: 0vw;
+    }
+    #footerContainer{
+    
+      position: absolute;
+      top:960px;
+    }
+
+}

@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Comic;
+  src: url('./Fonts/ComicNeue-Regular.ttf');
+}
 td{
     font-size: 15px ;
     padding-bottom: 10px;
@@ -10,6 +14,8 @@ table{
     margin-top: 5%; 
 }
 #mainSectionMenu{
+  font-family: Comic;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,10 +39,34 @@ table{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.captionTitle{
-    font-size: 28px;
-    font-weight: normal;
-    margin: 20px;
+.captionContainer{
+  margin-bottom: 15px;
+}
+.captionTitleFirst{
+  font-size: 28px;
+  font-weight: normal;
+  margin-right: 4vw;
+  margin-left: 4vw;
+  margin-top: 4vw;
+}
+.captionTitleSecond{
+font-size: 28px;
+font-weight: normal;
+margin-right: 6vw;
+margin-left: 6vw;
+margin-top: 4vw;
+
+}
+.captionTitleThird{
+font-size: 28px;
+font-weight: normal;
+margin-right: 5vw;
+margin-left: 5vw;
+margin-top: 4vw;
+
+}
+.brImage{
+  width: 10vw;
 }
 .firstTable{
     color: #c77529;
@@ -73,88 +103,56 @@ table{
     }
     }
 
-    .captionTitleFirst, .captionTitleFirst:visited {
-        text-decoration: none;
-        position: relative;
-        font-size: 28px;
-        font-weight: normal;
-        margin: 20px;
-        }
-      .captionTitleFirst:after, .captionTitleFirst:visited:after {
-        content: '';
-        height: 3px;
+    .captionTitleFirst, .captionTitleFirst:visited , .captionTitleSecond, .captionTitleSecond:visited, .captionTitleThird, .captionTitleThird:visited {
+      text-decoration: none;
+      position: relative;
+      }
+    .captionTitleFirst:after, .captionTitleFirst:visited:after, .captionTitleSecond:after, .captionTitleSecond:visited:after,.captionTitleThird:after, .captionTitleThird:visited:after {
+      content: '';
+      height: 3px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      background:linear-gradient(to right,#c77529, #a86698,#6a56a5 );
+      transition: 0.2s;
+    }
+    .captionTitleFirst:hover:after, .captionTitleFirst:visited:hover:after,   .captionTitleSecond:hover:after, .captionTitleSecond:visited:hover:after   , .captionTitleThird:hover:after, .captionTitleThird:visited:hover:after {
+      width: 100%;
+    }
+    .captionTitleFirst.block, .captionTitleFirst:visited.block, .captionTitleSecond.block, .captionTitleSecond:visited.block , .captionTitleThird.block, .captionTitleThird:visited.block {
+      display: block;
+      padding: 0.5em;
+    }
+    
+
+/* CSS mobile ici */
+ 
+
+    @media(max-width: 780px) {
+      td {
+        text-align: center;
+      }
+      #footerContainer{
+        position: fixed;
+      }
+      .captionContainer {
+        margin-top: 5vh;
+      }
+    }
+    @media (max-width: 640px) {
+      #headerInMenu{
+        font-size: 30px;
+      }
+      .captionTitleFirst, .captionTitleSecond, .captionTitleThird{
+        font-size: 18px;
+        margin-right: 0vw;
+        margin-left: 0vw;
+      }
+      #footerContainer{
         position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 0%;
-        background: #c77529;
-        transition: 0.2s;
+        top: 860px;
+    
       }
-      .captionTitleFirst:hover:after, .captionTitleFirst:visited:hover:after {
-        width: 100%;
-      }
-      .captionTitleFirst.block, .captionTitleFirst:visited.block {
-        display: block;
-        padding: 0.5em;
-      }
-      .captionTitleFirst.block:hover, .captionTitleFirst:visited.block:hover {
-        background: #eee;
-      }
-
-
-      .captionTitleSecond, .captionTitleSecond:visited {
-        text-decoration: none;
-        position: relative;
-        font-size: 28px;
-        font-weight: normal;
-        margin: 20px;
-        }
-      .captionTitleSecond:after, .captionTitleSecond:visited:after {
-        content: '';
-        height: 3px;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 0%;
-        background: #a86698;
-        transition: 0.2s;
-      }
-      .captionTitleSecond:hover:after, .captionTitleSecond:visited:hover:after {
-        width: 100%;
-      }
-      .captionTitleSecond.block, .captionTitleSecond:visited.block {
-        display: block;
-        padding: 0.5em;
-      }
-      .captionTitleSecond.block:hover, .captionTitleSecond:visited.block:hover {
-        background: #eee;
-      }
-
-
-      .captionTitleThrid, .captionTitleThrid:visited {
-        text-decoration: none;
-        position: relative;
-        font-size: 28px;
-        font-weight: normal;
-        margin: 20px;
-        }
-      .captionTitleThrid:after, .captionTitleThrid:visited:after {
-        content: '';
-        height: 3px;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 0%;
-        background: #6a56a5;
-        transition: 0.2s;
-      }
-      .captionTitleThrid:hover:after, .captionTitleThrid:visited:hover:after {
-        width: 100%;
-      }
-      .captionTitleThrid.block, .captionTitleThrid:visited.block {
-        display: block;
-        padding: 0.5em;
-      }
-      .captionTitleThrid.block:hover, .captionTitleThrid:visited.block:hover {
-        background: #eee;
-      }
+      
+    }

@@ -210,7 +210,133 @@ body{
         .25em 0 0 #f5c84b,
         .5em 0 0 #f5c84b;}}
 
-#footerContainer{
+
+#redirectMenu{
+    display: flex;
+    flex-direction: column;
+    transform: scale(1);
+    transition: all 0.5s ease-in-out 0.2s;
+    text-decoration: none;
+}
+#redirectMenu:hover{
+    transform: scale(1.3);
+    transition: all 0.5s ease-in-out 0.2s;
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+/*MENTIONS LEGALES*/
+
+#mainSectionMentions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    justify-content: center;
+    padding-top: 2%;
+  }
+  
+  .cards__item {
+    display: flex;
+    padding: 1rem;
+    margin: auto;
+    width: 100%;
+    justify-content: center;  
+    
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+  
+    .cards__item {
+        width: 100%;
+        margin:0;
+        margin: auto;
+    }
+    #upcommingTitle{
+      width: 50vw;
+  }
+    #cardLeft{
+      margin-top: 0;
+      margin-left:0;
+      margin-right: 0;
+  }
+  #cardRight{
+      margin-top: 0;
+      margin-left: 0;
+      margin-right: 0;
+  }
+    
+  }
+  @media(max-width: 770px) {
+      .cards__item {
+          width: 100%;
+          margin:0;
+          margin: auto;
+      }
+      #upcommingTitle{
+        width: 50vw;
+    }
+      #cardLeft{
+        margin-top: 0;
+        margin-left:0;
+        margin-right: 0;
+    }
+    #cardRight{
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+     
+    }
+    @media(min-width: 1024px) {
+      .cards__item {
+          width: 33.3333%;
+      }
+      
+      .card{
+          min-width: 100%;
+      }
+    }
+  .card {
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 10px 0 rgba(152,153,151,.6);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-width: 75%;
+  }
+  .card:hover {
+      filter: contrast(100%);
+  }
+  
+  .card__content {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+
+
+  /* FOOTER */
+
+  #footerContainer{
     display: flex;
     background-color: #569c88;
     height: 6vh;
@@ -265,102 +391,5 @@ text-decoration: none;
     text-align: center;
     font-size: 25px;
 }
-#redirectMenu{
-    display: flex;
-    flex-direction: column;
-    transform: scale(1);
-    transition: all 0.5s ease-in-out 0.2s;
-    text-decoration: none;
-}
-#redirectMenu:hover{
-    transform: scale(1.3);
-    transition: all 0.5s ease-in-out 0.2s;
-    opacity: 0.6;
-    text-decoration: none;
-}
 
-/*MENTIONS LEGALES*/
-
-#mainSectionMentions{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 80%;
-    align-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-left: 4%;
-    padding-right: 4%;
-}
-
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    justify-content: center;
-    padding-top: 2%;
-  }
-  
-  .cards__item {
-    display: flex;
-    padding: 1rem;
-    margin: auto;
-    width: 100%;
-    justify-content: center;  
-    
-  }
-  @media(max-width: 40rem) {
-      .cards__item {
-          width: 100%;
-          margin:0;
-          margin: auto;
-      }
-      #upcommingTitle{
-        width: 50vw;
-    }
-      #cardLeft{
-        margin-top: 0;
-        margin-left:0;
-        margin-right: 0;
-    }
-    #cardRight{
-        margin-top: 0;
-        margin-left: 0;
-        margin-right: 0;
-    }
-     
-    }
-    @media(min-width: 56rem) {
-      .cards__item {
-          width: 33.3333%;
-      }
-      
-      .card{
-          min-width: 100%;
-      }
-    }
-  .card {
-    background-color: white;
-    border-radius: 0.25rem;
-    box-shadow: 0 0 10px 0 rgba(152,153,151,.6);
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    min-width: 75%;
-  }
-  .card:hover {
-      filter: contrast(100%);
-  }
-  
-  .card__content {
-    display: flex;
-    flex: 1 1 auto;
-    flex-direction: column;
-    padding: 1rem;
-  }
-  
+ 
