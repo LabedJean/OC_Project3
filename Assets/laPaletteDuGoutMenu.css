@@ -34,11 +34,15 @@ table{
 }
 #headerInMenu{
     text-align: center;
-    font-size: 50px;
     background: linear-gradient(to right, #57a746, #c2db76);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: Playfair;
+}
+.titleHeader{
+  font-size: 50px;
+  font-family: Playfair;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 .captionTitleFirst{
     font-size: 28px;

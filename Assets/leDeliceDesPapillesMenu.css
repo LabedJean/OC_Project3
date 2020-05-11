@@ -35,12 +35,15 @@ table{
 }
 #headerInMenu{
     text-align: center;
-    font-size: 50px;
     background: linear-gradient(to right,#3a4fa2, #4e96d1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: Kaushan;
-
+}
+.titleHeader{
+  font-size: 50px;
+  font-family: Kaushan;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 .captionTitle{
     font-size: 28px;
