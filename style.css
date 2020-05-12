@@ -165,7 +165,7 @@ body{
     margin-left: 3vw;
     color: #f5c84b;
 }
-#contactUs{
+.contactUs{
     overflow: hidden;
     text-align: center;
     display: block;
@@ -230,13 +230,13 @@ body{
     margin-top: 3%;
     text-align: center;
 }
-#redirectMenu{
+.redirectMenu{
     display: flex;
     flex-direction: column;
     transform: scale(1);
     transition: all 0.5s ease-in-out 0.2s;
 }
-#redirectMenu:hover{
+.redirectMenu:hover{
     transform: scale(1.3);
     transition: all 0.5s ease-in-out 0.2s;
     opacity: 0.6;

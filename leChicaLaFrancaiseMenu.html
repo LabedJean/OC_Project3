@@ -10,18 +10,18 @@
 </head>
 <body>
     <header id="navContainer">
-        <a id ="goBack"href="index.html"><h1 id="title">ohmyfood</h1></a>
+        <a id="goBack" href="index.html"><h1 id="title">ohmyfood</h1></a>
     </header>
     <section id="mainSectionMenu">
         <header id="headerInMenu">
             <h2 class="titleHeader">Le Chic à la francaise</h2>
         </header>
-        <table class="firstTable">
-            <div class="captionContainer">
-                <img class="brImage"  src="./Assets/Images/leChicaLaFrancaise/firstLeft.png" alt="image note enchantée" />
-                    <a class="captionTitleFirst">Pour se mettre en appétit</a>
-                <img class="brImage"  src="./Assets/Images/leChicaLaFrancaise/firstRight.png" alt="image note enchantée" />
-            </div>
+        <div class="captionContainer">
+            <img class="brImage"  src="./Assets/Images/leChicaLaFrancaise/firstLeft.png" alt="image note enchantée" />
+                <a class="captionTitleFirst">Pour se mettre en appétit</a>
+            <img class="brImage"  src="./Assets/Images/leChicaLaFrancaise/firstRight.png" alt="image note enchantée" />
+        </div>
+        <table class="firstTable">   
             <thead>
                 <tr>
                     <td>Tartare de poulpe acidulé aux zestes d'orange</td>
@@ -38,12 +38,13 @@
             </thead>
         </table>
 
+        <div class="captionContainer"> 
+            <img class="brImage"  src="./Assets/Images/leChicaLaFrancaise/secondLeft.png" alt="image note enchantée" />
+                <a class="captionTitleSecond">Plaisir des papilles</a>
+            <img class="brImage"  src="./Assets/Images/leChicaLaFrancaise/secondRight.png" alt="image note enchantée" />
+        </div>
+
         <table class="secondTable">
-            <div class="captionContainer"> 
-                <img class="brImage"  src="./Assets/Images/leChicaLaFrancaise/secondLeft.png" alt="image note enchantée" />
-                    <a class="captionTitleSecond">Plaisir des papilles</a>
-                <img class="brImage"  src="./Assets/Images/leChicaLaFrancaise/secondRight.png" alt="image note enchantée" />
-            </div>
             <thead>
                 <tr>
                     <td>Coquilles Saint-Jacques accompagnées d'une purée de panais</td>
@@ -60,12 +61,13 @@
             </thead>
         </table>
 
+        <div class="captionContainer">
+            <img class="brImage"  src="./Assets/Images/leChicaLaFrancaise/thirdLeft.png" alt="image note enchantée" />
+                <a class="captionTitleThird">Gourmandises sucrées</a>
+            <img class="brImage"  src="./Assets/Images/leChicaLaFrancaise/thirdRight.png" alt="image note enchantée" /> 
+        </div>
+
         <table class="thirdTable">
-            <div class="captionContainer">
-                <img class="brImage"  src="./Assets/Images/leChicaLaFrancaise/thirdLeft.png" alt="image note enchantée" />
-                    <a class="captionTitleThird">Gourmandises sucrées</a>
-                <img class="brImage"  src="./Assets/Images/leChicaLaFrancaise/thirdRight.png" alt="image note enchantée" /> 
-            </div>
             <thead>
                 <tr>
                     <td>Pétales de violettes glacés et purée de noisettes</td>
@@ -88,10 +90,10 @@
     </table>
     <footer id="footerContainer">
         <div class="wiggle">  
-            <a id="contactUs" target="blank" href="mentionsLegales.html">Mentions légales</a>
+            <a class="contactUs" target="blank" href="mentionsLegales.html">Mentions légales</a>
         </div>
         <div class="wiggle">  
-        <a href="mailto:contact@ohmyfood.fr" href="Cliquez ici pour nous contacter" id="contactUs">Contactez- nous</a>
+        <a href="mailto:contact@ohmyfood.fr"  class="contactUs">Contactez- nous</a>
         </div>
     </footer>
 </body>
