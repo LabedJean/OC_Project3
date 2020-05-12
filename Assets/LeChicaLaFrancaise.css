@@ -15,7 +15,6 @@ table{
 }
 #mainSectionMenu{
   font-family: Comic;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -75,12 +74,9 @@ color: #6a56a5;
 }
 .secondTable{
     color: #a86698;
-
-
 }
 .thirdTable{
     color: #6a56a5;
-
 }
 
 
